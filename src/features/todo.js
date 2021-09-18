@@ -13,12 +13,12 @@ export const addTodoAsync = createAsyncThunk('todos/addTodoAsync', async (todo) 
 });
 
 export const toggleCompleteAsync = createAsyncThunk('todos/toggleCompleteAsync', async (todo) => {
-    const { data } = await todoService.updateTodo(todo.id, todo)
+    const { data } = await todoService.updateTodo(todo.id, todo);
     return data;
 });
 
 export const deleteTodoAsync = createAsyncThunk('todo/deleteTodoAsync', async (id) => {
-    const { data } = await todoService.removeTodo(id);
+    const { data } = await todoService.deleteTodo(id);
     return data;
 });
 

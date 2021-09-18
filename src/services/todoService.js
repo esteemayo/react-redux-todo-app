@@ -18,6 +18,6 @@ export function updateTodo(id, todo) {
     return http.patch(todoUrl(id), todo);
 };
 
-export function removeTodo(id) {
+export function deleteTodo(id) {
     return http.delete(todoUrl(id));
 };
