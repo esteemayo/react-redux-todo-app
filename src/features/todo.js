@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-import * as todoService from './../services/todoService';
+import * as todoService from 'services/todoService';
 
 export const getTodosAsync = createAsyncThunk('todos/getTodosAsync', async () => {
     const { data } = await todoService.getTodos();

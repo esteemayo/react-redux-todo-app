@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { addTodoAsync } from '../features/todo';
+import { addTodoAsync } from 'features/todo';
 
 const AddTodoForm = () => {
     const titleInputRef = useRef();

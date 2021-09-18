@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { getTodosAsync } from '../features/todo';
+import { getTodosAsync } from 'features/todo';
 import TodoItem from './TodoItem';
 
 const TodoList = () => {
